@@ -1,0 +1,89 @@
+/* COLORS */
+/* font size */
+/* font */
+/* font */
+/* effect */
+/* tablet */
+/* home page */
+/* line 6, ../../sass/screens/tablet.scss */
+.search-block {
+  width: 480px;
+}
+
+/* menu */
+/* line 14, ../../sass/screens/tablet.scss */
+.megamenus .nav .dropdown-menu {
+  width: 500px !important;
+}
+
+/* end menu */
+/* product featured  */
+/* line 24, ../../sass/screens/tablet.scss */
+.products-featured .jcarousel-container .jcarousel-item {
+  width: 220px !important;
+}
+
+/* end product featured */
+/* panel footer */
+/* line 36, ../../sass/screens/tablet.scss */
+#panel-footer .download-apps ul li {
+  width: 103px;
+  margin-right: 5px;
+}
+
+/** end panel footer */
+/* sidebar */
+/* product list  */
+/* line 50, ../../sass/screens/tablet.scss */
+.sidebar .products-list .views-field-type-image {
+  width: 70px;
+}
+
+/* end product list */
+/* end sidebar */
+/* end home page */
+/* check out */
+/* end check out */
+/* block-sell-on */
+/* line 69, ../../sass/screens/tablet.scss */
+.block-sell-on iframe {
+  height: 255px;
+}
+
+/* end block-sell-on */
+/* contact-us */
+/* line 78, ../../sass/screens/tablet.scss */
+.contact-us .webform-client-form .form-text, .contact-us .webform-client-form .form-textarea, .contact-us .webform-client-form .chzn-container {
+  max-width: 254px;
+}
+
+/* end contact-us */
+/* recommend for you */
+/* line 88, ../../sass/screens/tablet.scss */
+.products-recommend .jcarousel-container .jcarousel-item {
+  width: 220px !important;
+}
+
+/* page affiliate program */
+/* line 97, ../../sass/screens/tablet.scss */
+.carousel-affiliate .boxwap p {
+  margin-top: 0;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1199px){
+    #block-views-slideshow-block--2 .views-field-body {
+    font-size: 28px;
+}
+.block-menu-descriptions {
+		position: relative;
+		float: right;
+		padding-top: 26px;
+		margin-left: 0px;
+	}
+	.block-commerce-cart {
+		float: right;
+		position: relative;
+		padding-top: 19px;
+		margin-left: 14px;
+	}
+}

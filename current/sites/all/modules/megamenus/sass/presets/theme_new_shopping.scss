@@ -1,0 +1,140 @@
+@import "../../fonts/futura/stylesheet.css";
+
+.style-theme_new_shopping {
+  color: #fff; 
+  .navbar-collapse {
+    background: #000;
+  } 
+  .nav {
+    > li {     
+      > a { 
+        border-left: 1px solid #393737;       
+        color: #fff !important;   
+        font-family: 'futura_lt_btlight';
+        font-size: 18px;
+        font-weight: normal;       
+        padding: 10px 15px;       
+        text-shadow: none; 
+        text-transform: uppercase;
+      }   
+      &:hover, &:focus, &.open, &.active {
+        > a {
+          background: none !important;
+          border-color: #393737 !important;
+          color: #e21a2c !important;
+        }
+      }
+      &:first-child {
+        > a {
+          border-left: none;
+        }
+      }     
+    }
+  }
+  .dropdown-menu {
+    background-color: #000;
+    border: none;    
+    font-size: 12px;
+    margin: 0;     
+    .megamenus-row {
+      border-color: #393737;
+      .megamenus-col {
+        padding: 15px 20px;
+        .block {
+          h2 {
+            color: #fff;
+          }
+          a {
+            color: #e21a2c;
+            &:hover, &:focus {
+              color: #fff;
+            }
+          }       
+        }
+        .dropdown-submenu {
+          .dropdown-menu {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        > a {
+          border-top: none;
+          color: #fff;
+          font-size: 12px;         
+          padding: 5xp 0 !important;
+          text-transform: none;
+          &:hover, &:focus {
+            color: #e21a2c;
+          }
+        }
+        &.active > a {
+          color: #e21a2c;
+        }
+      }
+    }   
+  }
+}
+
+.vertical {  
+  .nav {
+    > li {
+      background: none; 
+      border-top: 1px solid #393737;
+      padding: 0;
+      &:first-child {
+        border-top: none;
+      }      
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .style-theme_new_shopping {
+    .navbar-collapse {
+      background: #000;
+    }
+    .nav {
+      > li {        
+        > a {
+          border-color: #393737;
+          color: #fff !important;
+          padding: 10px 20px;
+        }
+        &:hover, &:focus, &.open, &.active {
+          > a {         
+            background: #e21a2c !important;
+            border-color: #393737 !important;  
+            color: #fff !important;              
+            &:hover, &:focus {
+              border-color: #393737 !important; 
+              color: #fff !important;
+            }
+          }
+        }
+        > .dropdown-menu {          
+          border-color: #393737;
+        }
+      }      
+    }
+    .dropdown-menu {
+      background: none;
+      border: none;
+      .megamenus-col {
+        padding: 5px 10px !important;
+      }
+    }
+  }
+  .vertical {  
+    .nav {
+      > li { 
+        border-top: none;             
+      }
+    }
+  }  
+}

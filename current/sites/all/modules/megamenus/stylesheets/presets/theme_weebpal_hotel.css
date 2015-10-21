@@ -1,0 +1,135 @@
+@import url(../../fonts/oswald_regular/stylesheet.css);
+/* line 3, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel {
+  color: #fff;
+}
+/* line 5, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .navbar-collapse {
+  background: #514332;
+}
+/* line 9, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .nav > li {
+  margin: 0;
+  padding-right: 1px;
+}
+/* line 12, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .nav > li > a {
+  color: #fff !important;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 16px;
+  padding: 11px 20px;
+  text-shadow: none;
+}
+/* line 19, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .nav > li:last-child {
+  background: none;
+  padding-right: 0;
+}
+/* line 24, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .nav > li:hover > a, .style-theme_weebpal_hotel .nav > li:focus > a, .style-theme_weebpal_hotel .nav > li.open > a, .style-theme_weebpal_hotel .nav > li.active > a {
+  background: #905c14 !important;
+  color: #fff !important;
+}
+/* line 31, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu {
+  background: #905c14;
+}
+/* line 33, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu .megamenus-row {
+  border-color: #a86a15;
+}
+/* line 36, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu .megamenus-row .block h2 {
+  color: #fff;
+}
+/* line 39, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu .megamenus-row .block a {
+  color: #a86a15;
+}
+/* line 41, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu .megamenus-row .block a:hover, .style-theme_weebpal_hotel .dropdown-menu .megamenus-row .block a:focus {
+  color: #fff;
+}
+/* line 49, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu ul li > a {
+  border-top-color: #a86a15;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: normal;
+  margin: 0 -10px;
+  padding: 8px 10px !important;
+  text-transform: none;
+}
+/* line 57, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu ul li > a:hover, .style-theme_weebpal_hotel .dropdown-menu ul li > a:focus {
+  background: #6d440c;
+  color: #fff;
+}
+/* line 62, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .dropdown-menu ul li.active > a {
+  background: #6d440c;
+  color: #fff;
+}
+/* line 70, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .megamenus-col .dropdown-submenu {
+  margin-left: 10px !important;
+}
+/* line 74, ../../sass/presets/theme_weebpal_hotel.scss */
+.style-theme_weebpal_hotel .megamenus-col:first-child .dropdown-submenu {
+  margin-left: 0 !important;
+}
+
+/* line 83, ../../sass/presets/theme_weebpal_hotel.scss */
+.vertical .nav > li {
+  border-bottom: 1px solid #5f4f3c;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 94, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav > li {
+    background: none;
+  }
+  /* line 96, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav > li > a {
+    color: #fff;
+    border-color: #a86a15;
+    font-size: 14px;
+    text-shadow: none;
+  }
+  /* line 103, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav > li:hover > a, .style-theme_weebpal_hotel .nav > li:focus > a, .style-theme_weebpal_hotel .nav > li.open > a, .style-theme_weebpal_hotel .nav > li.active > a {
+    background: #905c14;
+    border-color: #a86a15;
+    color: #fff !important;
+  }
+  /* line 107, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav > li:hover > a:hover, .style-theme_weebpal_hotel .nav > li:hover > a:focus, .style-theme_weebpal_hotel .nav > li:focus > a:hover, .style-theme_weebpal_hotel .nav > li:focus > a:focus, .style-theme_weebpal_hotel .nav > li.open > a:hover, .style-theme_weebpal_hotel .nav > li.open > a:focus, .style-theme_weebpal_hotel .nav > li.active > a:hover, .style-theme_weebpal_hotel .nav > li.active > a:focus {
+    background: #905c14;
+    border-color: #a86a15;
+  }
+  /* line 113, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav > li > .dropdown-menu {
+    border-top: 1px solid #a86a15;
+  }
+  /* line 117, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav .dropdown-menu {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  /* line 122, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav .dropdown-menu .megamenus-row .megamenus-col {
+    border-top: 1px solid #a86a15;
+  }
+  /* line 124, ../../sass/presets/theme_weebpal_hotel.scss */
+  .style-theme_weebpal_hotel .nav .dropdown-menu .megamenus-row .megamenus-col:first-child {
+    border-top: none;
+  }
+
+  /* line 134, ../../sass/presets/theme_weebpal_hotel.scss */
+  .vertical .nav > li {
+    border-bottom: none;
+  }
+}

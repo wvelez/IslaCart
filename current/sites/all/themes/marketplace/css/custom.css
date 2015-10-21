@@ -1,0 +1,45 @@
+.group-info .commerce-add-to-cart .form-submit{clear: both; margin-top: 15px;min-width: 190px;}
+#logo{padding-top:0px;}
+#logo img{width:65%;}
+#block-megamenus-main-menu--3{min-height:385px !important;}
+#block-views-slideshow-block--2 .views-field-body {
+    color: #F59E2A !important;
+    font-size: 46px;
+    font-weight: 500;
+    margin-left: 12%;
+    margin-top: -15px;
+    text-shadow: 1px 0 2px #bbb;
+    font-family: initial;
+}
+.panel-footer-4 .payment{margin-top:30px;}
+.today-deal-block .more-link{display:none;}
+.start-sell {margin-left: 20px;margin-top: 10px;}
+.start-sell a {margin-left: 15px;font-size: 18px;font-weight: 500;}
+.start-sell a img {width: 32px;height: 32px;}
+.front #panel-first{margin-bottom:4%;}
+.block-menu-descriptions h2 {font-size: 16px !important;color: #0088cc !important;margin-top: -6px;}
+#change_skin_menu_wrapper,#block-block-20{display:none;}
+#block-menu-menu-headline-menu li.first a{
+    background-color: #F59926;
+    color: #ffffff;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+#block-views-exp-search-page{margin-top:15px;}
+.region-headline{font-size:14px;}
+#block-user-login{margin-top:1px;}
+#commerce-checkout-coupon-ajax-wrapper{margin-bottom:4%;}
+fieldset.customer_profile_billing{padding-left:2% !important;}
+fieldset.customer_profile_shipping > div.form-item,fieldset.customer_profile_billing > div.form-item {
+    float: left;
+    margin-right: 1em;
+}
+
+
+fieldset.customer_profile_shipping .name-block .form-text, fieldset.customer_profile_shipping .street-block .form-text, fieldset.customer_profile_shipping .locality-block .form-text, fieldset.customer_profile_billing .name-block .form-text, fieldset.customer_profile_billing .street-block .form-text, fieldset.customer_profile_billing .locality-block .form-text {
+    min-width: 390px;
+}
+
+fieldset.customer_profile_shipping, fieldset.customer_profile_billing {float:left;position:relative;width:50%;}
+fieldset.customer_profile_shipping label, fieldset.customer_profile_billing label  {min-width: 110px;}
+#eck-entity-form-add-commerce-store-store .form-file{margin-bottom:5%;}

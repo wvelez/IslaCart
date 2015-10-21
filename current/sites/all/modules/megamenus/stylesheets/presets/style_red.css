@@ -1,0 +1,131 @@
+@import url(../../fonts/robotoslab/stylesheet.css);
+/* line 3, ../../sass/presets/style_red.scss */
+.style-style_red {
+  color: #f1dec6;
+}
+/* line 5, ../../sass/presets/style_red.scss */
+.style-style_red .navbar-collapse {
+  background: #79001c;
+}
+/* line 10, ../../sass/presets/style_red.scss */
+.style-style_red .nav > li {
+  border-left: 1px outset #68000e;
+  border-right: 1px outset #68000e;
+  margin: 0;
+}
+/* line 14, ../../sass/presets/style_red.scss */
+.style-style_red .nav > li > a {
+  color: #f1dec6 !important;
+  font-family: 'roboto_slabregular';
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 23, ../../sass/presets/style_red.scss */
+.style-style_red .nav > li:first-child {
+  border-left: none;
+}
+/* line 26, ../../sass/presets/style_red.scss */
+.style-style_red .nav > li:last-child {
+  border-right: none;
+}
+/* line 30, ../../sass/presets/style_red.scss */
+.style-style_red .nav > li:hover > a, .style-style_red .nav > li:focus > a, .style-style_red .nav > li.open > a, .style-style_red .nav > li.active > a {
+  background: #4c0012 !important;
+  color: #fff;
+}
+/* line 37, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu {
+  background: #4c0012;
+  border-radius: 0;
+  margin: 0;
+  min-width: 160px;
+  padding: 0;
+}
+/* line 43, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu .megamenus-row {
+  border-color: #68000e;
+}
+/* line 46, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu .megamenus-row .block h2 {
+  color: #fff;
+}
+/* line 49, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu .megamenus-row .block a {
+  color: #fff;
+}
+/* line 51, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu .megamenus-row .block a:hover, .style-style_red .dropdown-menu .megamenus-row .block a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 58, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu .megamenus-row .dropdown-submenu .dropdown-menu {
+  border-radius: 0;
+}
+/* line 64, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu ul li {
+  margin: 0 !important;
+}
+/* line 66, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu ul li > a {
+  border-top-color: #68000e;
+  color: #f1dec6;
+  float: none;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: normal;
+  padding: 8px 10px !important;
+  text-transform: none;
+}
+/* line 74, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu ul li > a:hover, .style-style_red .dropdown-menu ul li > a:focus {
+  background: #79001c;
+  color: #fff;
+}
+/* line 79, ../../sass/presets/style_red.scss */
+.style-style_red .dropdown-menu ul li.active > a {
+  background: #79001c;
+  color: #fff;
+}
+
+/* line 90, ../../sass/presets/style_red.scss */
+.vertical .nav > li {
+  border-style: outset;
+  border-color: #68000e;
+  border-width: 1px 0;
+}
+
+@media (max-width: 992px) {
+  /* line 102, ../../sass/presets/style_red.scss */
+  .style-style_red .nav > li > a {
+    border-color: #68000e;
+  }
+  /* line 106, ../../sass/presets/style_red.scss */
+  .style-style_red .nav > li.open a {
+    border-color: #68000e !important;
+  }
+  /* line 112, ../../sass/presets/style_red.scss */
+  .style-style_red .nav:hover > a, .style-style_red .nav:focus > a, .style-style_red .nav.open > a, .style-style_red .nav.active > a {
+    border-color: #68000e;
+  }
+  /* line 114, ../../sass/presets/style_red.scss */
+  .style-style_red .nav:hover > a:hover, .style-style_red .nav:hover > a:focus, .style-style_red .nav:focus > a:hover, .style-style_red .nav:focus > a:focus, .style-style_red .nav.open > a:hover, .style-style_red .nav.open > a:focus, .style-style_red .nav.active > a:hover, .style-style_red .nav.active > a:focus {
+    border-color: #68000e;
+  }
+  /* line 120, ../../sass/presets/style_red.scss */
+  .style-style_red .dropdown-menu {
+    background: none;
+    border: none;
+  }
+
+  /* line 128, ../../sass/presets/style_red.scss */
+  .vertical .nav > li > a {
+    border: none;
+  }
+  /* line 131, ../../sass/presets/style_red.scss */
+  .vertical .nav > li .dropdown-menu {
+    border-color: #68000e;
+  }
+}

@@ -1,0 +1,95 @@
+name = Market Place
+description = Theme for Market Place.
+version = VERSION
+core = 7.x
+engine = 'phptemplate'
+
+stylesheets[all][] = vendor/bootstrap/css/bootstrap.css
+stylesheets[all][] = vendor/bootstrap/css/bootstrap-theme.css
+stylesheets[all][] = fonts/stylesheet.css
+stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/html.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/page.css
+stylesheets[all][] = css/block.css
+stylesheets[all][] = css/view.css
+stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/screen.css
+stylesheets[all][] = css/custom.css
+
+stylesheets[only screen and (min-width:992px) and (max-width:1199px)][] = css/screens/tablet.css
+stylesheets[only screen and (min-width:768px) and (max-width:991px)][]  = css/screens/vertical_tablet.css
+
+stylesheets[only screen and (max-width:991px)][] = css/screens/common.css
+stylesheets[only screen and (max-width:767px)][] = css/screens/mobile.css
+
+scripts[] = 'vendor/bootstrap/js/bootstrap.min.js'
+scripts[] = 'vendor/jquery.cookie.js'
+scripts[] = 'vendor/jquery.smooth-scroll.js'
+scripts[] = 'vendor/uikit/js/uikit.min.js'
+scripts[] = 'js/weebpal.js'
+scripts[] = 'js/marketplace.js'
+
+
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+
+regions[headline] = Headline
+regions[header] = Header
+regions[main_menu] = Main Menu
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[panel_menu_top] = Menu Top
+regions[panel_mobile_menu] = Panel Mobile Menu
+regions[panel_first] = Panel First
+regions[panel_second] = Panel Second
+regions[panel_third] = Panel Third
+
+regions[panel_highlighted_1] = Highlighted Left
+regions[panel_highlighted_2] = Highlighted
+regions[panel_highlighted_3] = Highlighted Right
+
+regions[panel_footer_1] = Panel Footer 1
+regions[panel_footer_2] = Panel Footer 2
+regions[panel_footer_3] = Panel Footer 3
+regions[panel_footer_4] = Panel Footer 4
+regions[footer] = Footer
+
+settings[sidebar_first_width] = 3
+settings[sidebar_second_width] = 3
+
+settings[panel_footer_1_width] = 3
+settings[panel_footer_2_width] = 3
+settings[panel_footer_3_width] = 3
+settings[panel_footer_4_width] = 3
+
+settings[panel_highlighted_1_width] = 4
+settings[panel_highlighted_3_width] = 4
+
+skins[red] = 'Red'
+skins[dark_blue] = 'Dark Blue'
+skins[yellow] = 'Yellow'
+skins[green] = 'Green'
+skins[cyan] = 'Cyan'
+
+
+backgrounds[bg-1] = 'Background 1'
+backgrounds[bg-2] = 'Background 2'
+backgrounds[bg-3] = 'Background 3'
+backgrounds[bg-4] = 'Background 4'
+backgrounds[bg-5] = 'Background 5'
+backgrounds[bg-6] = 'Background 6'
+backgrounds[bg-7] = 'Background 7'
+
+layout[layout-boxed] = Boxed Layout
+settings[layout_width_default] = 1200

@@ -1,0 +1,150 @@
+/* COLORS */
+/* font size */
+/* font */
+/* font */
+/* effect */
+/* html.scss */
+/* line 4, ../sass/html.scss */
+body {
+  font-family: "open_sansregular", sans-serif;
+  font-size: 14px;
+  color: #7a7a7a;
+  background: white;
+  font-weight: 100;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 14, ../sass/html.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 20, ../sass/html.scss */
+header, nav, section, article, figure, aside, footer {
+  display: block;
+}
+
+/* line 23, ../sass/html.scss */
+a {
+  color: #0088cc;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 26, ../sass/html.scss */
+a:hover, a:focus {
+  color: #ff6d00;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 33, ../sass/html.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 15px;
+  line-height: 1.4;
+}
+
+/* line 38, ../sass/html.scss */
+h1, h2, h1#page-title {
+  font-size: 1.57em;
+  color: black;
+}
+
+/* line 43, ../sass/html.scss */
+h3 {
+  font-size: 1.286em;
+  color: black;
+}
+
+/* line 48, ../sass/html.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 61, ../sass/html.scss */
+.form-submit {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  background-color: #0088cc;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 101, ../sass/includes/_include.scss */
+.form-submit:hover, .form-submit:focus {
+  background-color: #ff6d00;
+}
+
+/* line 64, ../sass/html.scss */
+.form-text, .form-select, .form-textarea {
+  padding: 5px 10px;
+  border: 1px solid gainsboro;
+  max-width: 100%;
+}
+/* line 68, ../sass/html.scss */
+.form-text:focus, .form-select:focus, .form-textarea:focus {
+  border-color: #9b9b9b;
+}
+
+/* line 74, ../sass/html.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #f44f4f;
+}
+
+/* line 78, ../sass/html.scss */
+legend {
+  padding-bottom: 5px;
+}
+
+/* line 82, ../sass/html.scss */
+label {
+  font-weight: normal;
+}
+
+/* line 85, ../sass/html.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 88, ../sass/html.scss */
+p {
+  margin-bottom: 15px;
+}
+
+/* line 97, ../sass/html.scss */
+.views-field, .field {
+  margin-bottom: 15px;
+}
+
+/* line 101, ../sass/html.scss */
+input[type="radio"], input[type="checkbox"] {
+  margin-top: -1px;
+  border: 1px solid gainsboro;
+  color: #7a7979;
+  margin-right: 10px;
+}
+
+/* line 108, ../sass/html.scss */
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* line 113, ../sass/html.scss */
+fieldset {
+  min-height: 30px;
+}

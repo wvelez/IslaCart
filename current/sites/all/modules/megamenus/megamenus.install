@@ -1,0 +1,36 @@
+<?php
+
+function megamenus_install() {
+}
+
+function megamenus_uninstall() {
+  drupal_uninstall_schema('megamenus');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function megamenus_schema() {
+  $schema = array();
+
+  $schema['megamenus'] = array(
+    'fields' => array(
+      'menu_name' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+      ),
+      'block_config' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+      ),
+      'menu_config' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('menu_name'),
+  );
+
+  return $schema;
+}

@@ -1,0 +1,12 @@
+name = Megamenus
+description = Menu solutions for Drupal
+package = megamenus
+version = VERSION
+core = 7.x
+
+files[] = megamenus.inc
+files[] = megamenus.themes.inc
+files[] = megamenus.ajax.inc
+files[] = megamenus.admin.inc
+files[] = megamenus.module
+configure = admin/structure/megamenus
