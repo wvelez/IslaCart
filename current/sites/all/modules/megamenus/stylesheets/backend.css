@@ -1,0 +1,414 @@
+@import url(../font-awesome/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/* line 20, ../sass/backend.scss */
+#megamenus-config select,
+#megamenus-config textarea,
+#megamenus-config input[type="text"],
+#megamenus-config input[type="password"],
+#megamenus-config input[type="datetime"],
+#megamenus-config input[type="datetime-local"],
+#megamenus-config input[type="date"],
+#megamenus-config input[type="month"],
+#megamenus-config input[type="time"],
+#megamenus-config input[type="week"],
+#megamenus-config input[type="number"],
+#megamenus-config input[type="email"],
+#megamenus-config input[type="url"],
+#megamenus-config input[type="search"],
+#megamenus-config input[type="tel"],
+#megamenus-config input[type="color"],
+#megamenus-config .uneditable-input {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  padding: 5px;
+  font-size: 12px;
+  color: #777;
+  line-height: 18px;
+  height: 35px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 33, ../sass/backend.scss */
+.disabled {
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 42, ../sass/backend.scss */
+#megamenus-config {
+  color: #777;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: normal;
+  min-height: 800px;
+  position: relative;
+  /* megamenus config header */
+}
+/* line 51, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header {
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  margin-bottom: 20px;
+  padding: 20px;
+  overflow: hidden;
+  /* end config group */
+}
+/* line 57, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header h3 {
+  background: #fff;
+  color: #666;
+  font-weight: 700;
+  left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: -10px;
+}
+/* line 67, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  float: left;
+}
+/* line 72, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  min-height: 55px;
+}
+/* line 79, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group li .hasTip {
+  display: block;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+/* line 86, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 92, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .radio label {
+  margin-right: 10px;
+}
+/* line 95, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .radio input {
+  margin-left: 0;
+  margin-right: 3px;
+  float: none;
+}
+/* line 101, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group select {
+  min-width: 200px;
+}
+/* line 103, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group select option {
+  padding: 5px;
+}
+/* line 107, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .toolitem-moveleft {
+  display: inline-block;
+  background: gold;
+  margin-right: 10px;
+  padding: 15px;
+}
+/* line 113, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .toolitem-moveright {
+  display: inline-block;
+  background: gold;
+  padding: 15px;
+}
+/* line 119, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .radio-group label {
+  margin-right: 10px;
+}
+/* line 124, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group input[type="radio"] {
+  display: none;
+}
+/* line 127, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group label:first-of-type {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-right: 0;
+}
+/* line 132, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .config-action {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+/* line 136, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn {
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5e5e5', GradientType=0);
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #333;
+  text-shadow: none;
+}
+/* line 148, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn:hover, #megamenus-config .megamenus-config-header .config-group .btn-group .btn.acitve {
+  background-image: none;
+}
+/* line 152, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-info.active {
+  background-color: #bd362f;
+  background-image: none;
+  color: #fff;
+}
+/* line 157, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-danger.active {
+  background-color: #51a351;
+  background-image: none;
+  color: #fff;
+}
+/* line 166, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-move-left,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-move-right,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-addrow,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-addcol,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-removecol {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 30px;
+  line-height: 27px;
+  padding: 0;
+  width: 30px;
+}
+/* line 175, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-move-left,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-addcol {
+  margin-right: 15px;
+}
+/* line 180, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-addrow,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-addcol,
+#megamenus-config .megamenus-config-header .config-group .btn-group .btn-removecol {
+  line-height: 30px;
+}
+/* line 185, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .megamenus-actions-group {
+  clear: both;
+  padding-top: 10px;
+  overflow: hidden;
+  float: left;
+}
+/* line 190, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .megamenus-actions-group .btn {
+  margin: 0 10px 0 0;
+}
+/* line 196, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header #megamenus-config-groups h3 {
+  margin-top: 0;
+}
+/* line 201, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .megamenus-messages-group .toolbox-message {
+  text-align: center;
+  width: 50%;
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  margin-bottom: 10px;
+}
+/* line 217, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .megamenus-links-group {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* line 221, ../sass/backend.scss */
+#megamenus-config .megamenus-config-header .megamenus-links-group a {
+  margin-right: 10px;
+  line-height: 35px;
+}
+
+/* end megamenus config header */
+/* megamenus config content */
+/* line 234, ../sass/backend.scss */
+.megamenus .nav > li {
+  margin-right: 20px;
+  /* end dropdown menu */
+}
+/* line 236, ../sass/backend.scss */
+.megamenus .nav > li:last-child {
+  margin-right: 0;
+}
+/* line 239, ../sass/backend.scss */
+.megamenus .nav > li > a {
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #777;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+/* line 248, ../sass/backend.scss */
+.megamenus .nav > li.open > a {
+  background: #f1f1f1;
+}
+/* line 250, ../sass/backend.scss */
+.megamenus .nav > li.open > a:hover, .megamenus .nav > li.open > a:focus {
+  background: #f1f1f1;
+}
+/* line 255, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  min-width: 200px;
+  background: #f1f1f1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  /* end row */
+}
+/* line 270, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row {
+  margin-bottom: 10px;
+  /* end column */
+}
+/* line 272, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col {
+  padding: 0;
+}
+/* line 274, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col .megamenus-col-inner {
+  background: #fff;
+  margin-left: 10px;
+  border: 1px dotted #e5e5e5;
+  border-radius: 3px;
+  min-height: 30px;
+  padding: 10px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+}
+/* line 286, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col:first-child .megamenus-col-inner {
+  margin-left: 0;
+}
+/* line 290, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 293, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul li {
+  margin-bottom: 5px;
+}
+/* line 295, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul li > a {
+  border: 1px dotted #e5e5e5;
+  border-radius: 3px;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px 20px 5px 10px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+}
+/* line 306, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul li > a:hover, .megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul li > a:focus {
+  background: #eee;
+  text-decoration: none;
+}
+/* line 311, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 316, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col .caret {
+  display: none;
+}
+/* line 320, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col .submenu-group .megamenus-submenu {
+  background: #f2f2f2;
+  border: 1px dotted #e5e5e5;
+  margin-top: 10px;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 331, ../sass/backend.scss */
+.megamenus .nav > li .dropdown-menu .megamenus-row:last-child {
+  margin-bottom: 0;
+}
+/* line 338, ../sass/backend.scss */
+.megamenus .nav > li .megamenus-active .megamenus-col-inner {
+  border: 1px solid #0687d1 !important;
+  border-radius: 3px;
+  text-shadow: 0 1px 1px white;
+}
+/* line 346, ../sass/backend.scss */
+.megamenus .hidden-collapse {
+  display: none !important;
+}
+
+/* end megamenus config content */
+@media (max-width: 768px) {
+  /* line 354, ../sass/backend.scss */
+  .megamenus .collapse {
+    display: block;
+  }
+  /* line 358, ../sass/backend.scss */
+  .megamenus .nav > li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  /* line 363, ../sass/backend.scss */
+  .megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col {
+    margin-top: 10px;
+    width: 100%;
+  }
+  /* line 366, ../sass/backend.scss */
+  .megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col .megamenus-col-inner {
+    margin-left: 0;
+  }
+  /* line 369, ../sass/backend.scss */
+  .megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col:first-child {
+    margin-top: 0;
+  }
+  /* line 373, ../sass/backend.scss */
+  .megamenus .nav > li .dropdown-menu .megamenus-row .megamenus-col .dropdown-submenu .dropdown-menu {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  /* line 383, ../sass/backend.scss */
+  .megamenus .nav .submenu-align-center > .dropdown-menu {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}

@@ -1,0 +1,432 @@
+/* COLORS */
+/* font size */
+/* font */
+/* font */
+/* effect */
+/* line 11, ../../../sass/colors/red/style.scss */
+a {
+  color: #fc0d1b;
+}
+/* line 13, ../../../sass/colors/red/style.scss */
+a:hover, a:focus {
+  color: #222222;
+}
+
+/* line 18, ../../../sass/colors/red/style.scss */
+.form-submit {
+  background-color: #222222;
+}
+/* line 20, ../../../sass/colors/red/style.scss */
+.form-submit:hover, .form-submit:focus {
+  background-color: #fc0d1b;
+}
+
+/* headline */
+/* line 26, ../../../sass/colors/red/style.scss */
+.headline {
+  background-color: #222222;
+}
+/* line 28, ../../../sass/colors/red/style.scss */
+.headline .welcome-block {
+  color: white;
+}
+/* line 30, ../../../sass/colors/red/style.scss */
+.headline .welcome-block a {
+  color: white;
+}
+/* line 32, ../../../sass/colors/red/style.scss */
+.headline .welcome-block a:hover, .headline .welcome-block a:focus {
+  color: #fc0d1b;
+}
+/* line 41, ../../../sass/colors/red/style.scss */
+.headline .block-menu .menu li a {
+  color: white;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+.headline .block-menu .menu li a:hover, .headline .block-menu .menu li a:focus {
+  color: #fc0d1b;
+}
+
+/* user popup */
+/* line 53, ../../../sass/colors/red/style.scss */
+.user-login-popup-block h2 {
+  color: white;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+.user-login-popup-block h2:hover, .user-login-popup-block h2:focus {
+  color: #fc0d1b;
+}
+
+/* search-block */
+/* line 61, ../../../sass/colors/red/style.scss */
+.search-block .form-submit {
+  background-color: #fc0d1b;
+}
+/* line 63, ../../../sass/colors/red/style.scss */
+.search-block .form-submit:hover, .search-block .form-submit:focus {
+  background-color: #222222;
+}
+
+/* line 6, ../../../sass/colors/red/style.scss */
+.block-view-search-brand .item-list ul li a:hover, .block-view-search-brand .item-list ul li a:focus {
+  color: #fc0d1b;
+}
+
+/* account block  */
+/* cart */
+/* line 84, ../../../sass/colors/red/style.scss */
+.block-commerce-cart .line-item-quantity-raw {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+.block-commerce-cart .line-item-quantity-label:hover, .block-commerce-cart .line-item-quantity-label:focus {
+  color: #fc0d1b;
+}
+/* line 93, ../../../sass/colors/red/style.scss */
+.block-commerce-cart .view-footer ul.links li a {
+  background-color: #222222;
+}
+/* line 95, ../../../sass/colors/red/style.scss */
+.block-commerce-cart .view-footer ul.links li a:hover, .block-commerce-cart .view-footer ul.links li a:focus {
+  background-color: #fc0d1b;
+}
+
+/* description */
+/* line 6, ../../../sass/colors/red/style.scss */
+.block-menu-descriptions h2:hover, .block-menu-descriptions h2:focus {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+.block-menu-descriptions dt a:hover, .block-menu-descriptions dt a:focus {
+  color: #fc0d1b;
+}
+
+/* end header */
+/* menu */
+/* line 120, ../../../sass/colors/red/style.scss */
+.block-megamenus h2 {
+  color: #222222;
+}
+
+/* line 128, ../../../sass/colors/red/style.scss */
+#main-menu .nav > .active a {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#main-menu .nav > li > a:hover, #main-menu .nav > li > a:focus {
+  color: #fc0d1b;
+}
+/* line 138, ../../../sass/colors/red/style.scss */
+#main-menu .nav .dropdown.open > a {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#main-menu .nav .dropdown.open > a:hover, #main-menu .nav .dropdown.open > a:focus {
+  color: #fc0d1b;
+}
+/* line 146, ../../../sass/colors/red/style.scss */
+#main-menu .nav .dropdown-menu .megamenus-subul.level-1 > li > a {
+  color: #fc0d1b;
+}
+/* line 148, ../../../sass/colors/red/style.scss */
+#main-menu .nav .dropdown-menu .megamenus-subul.level-1 > li > a:hover, #main-menu .nav .dropdown-menu .megamenus-subul.level-1 > li > a:focus {
+  color: #222222;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#main-menu .nav .dropdown-menu .megamenus-subul > li > a:hover, #main-menu .nav .dropdown-menu .megamenus-subul > li > a:focus {
+  color: #fc0d1b;
+}
+
+/* end menu */
+/* slideshow */
+/* line 170, ../../../sass/colors/red/style.scss */
+#highlighted .slideshow .carousel-indicators .active {
+  background-color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+
+/* product grid */
+/* line 6, ../../../sass/colors/red/style.scss */
+.products-grid .views-field-title a:hover, .products-grid .views-field-title a:focus,
+.products-grid .views-field-field-brand a:hover,
+.products-grid .views-field-field-brand a:focus {
+  color: #fc0d1b;
+}
+/* line 187, ../../../sass/colors/red/style.scss */
+.products-grid .views-field-field-discount-percentage,
+.products-grid .views-field-commerce-price {
+  color: #fc0d1b;
+}
+
+/* line 193, ../../../sass/colors/red/style.scss */
+div.fivestar-widget-static .star span.on,
+div.fivestar-widget div.on a {
+  background: url("images/sprites.png") no-repeat 0 -29px;
+}
+
+/* product list */
+/* line 6, ../../../sass/colors/red/style.scss */
+.products-list .views-field-title a:hover, .products-list .views-field-title a:focus,
+.products-list .views-field-field-brand a:hover,
+.products-list .views-field-field-brand a:focus {
+  color: #fc0d1b;
+}
+/* line 208, ../../../sass/colors/red/style.scss */
+.products-list .views-field-field-discount-percentage,
+.products-list .views-field-commerce-price {
+  color: #fc0d1b;
+}
+
+/* line 6, ../../../sass/colors/red/style.scss */
+.today-deal-block .more-link a:hover, .today-deal-block .more-link a:focus {
+  color: #fc0d1b;
+}
+
+/* panel footer */
+/* line 222, ../../../sass/colors/red/style.scss */
+#panel-footer {
+  background-color: #222222;
+}
+/* line 224, ../../../sass/colors/red/style.scss */
+#panel-footer h2 {
+  color: white;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#panel-footer .menu li a:hover, #panel-footer .menu li a:focus {
+  color: #fc0d1b;
+}
+
+/* line 238, ../../../sass/colors/red/style.scss */
+.block-simplenews .form-submit:hover, .block-simplenews .form-submit:focus {
+  background: url("images/sprites.png") no-repeat 20px 14px;
+}
+
+/* line 246, ../../../sass/colors/red/style.scss */
+.logged-in .block-simplenews .form-submit {
+  background-color: white;
+  color: #7a7a7a;
+}
+/* line 249, ../../../sass/colors/red/style.scss */
+.logged-in .block-simplenews .form-submit:hover, .logged-in .block-simplenews .form-submit:focus {
+  background-color: #fc0d1b;
+  background-image: none;
+  color: white;
+}
+
+/* footer */
+/* line 259, ../../../sass/colors/red/style.scss */
+#footer {
+  background-color: #222222;
+}
+/* line 261, ../../../sass/colors/red/style.scss */
+#footer .region-footer {
+  border-color: #333;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#footer .copyright a:hover, #footer .copyright a:focus {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#footer .contact-message a:hover, #footer .contact-message a:focus {
+  color: #fc0d1b;
+}
+
+/* categories */
+/* line 6, ../../../sass/colors/red/style.scss */
+.item-list .facetapi-facetapi-checkbox-links li a:hover, .item-list .facetapi-facetapi-checkbox-links li a:focus {
+  color: #fc0d1b;
+}
+
+/* search price */
+/* line 291, ../../../sass/colors/red/style.scss */
+#section-top .block-megamenus:hover h2, #section-top .block-megamenus:focus h2 {
+  color: #fc0d1b;
+}
+
+/* line 299, ../../../sass/colors/red/style.scss */
+.search-price-block .ui-state-default {
+  background-color: #222222;
+  border-color: #222222;
+}
+/* line 302, ../../../sass/colors/red/style.scss */
+.search-price-block .ui-state-default:hover, .search-price-block .ui-state-default:focus {
+  color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+/* line 307, ../../../sass/colors/red/style.scss */
+.search-price-block .ui-state-hover {
+  background: #fc0d1b;
+  border-color: #fc0d1b;
+}
+
+/* end categories */
+/* breadcrumb */
+/* product details */
+/* line 344, ../../../sass/colors/red/style.scss */
+#main .node .commerce-product-field-commerce-price,
+#main .node .commerce-product-field-field-discount-percentage {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+#main .node .field-name-field-product .btn:hover, #main .node .field-name-field-product .btn:focus {
+  color: #fc0d1b;
+}
+/* line 351, ../../../sass/colors/red/style.scss */
+#main .node .field-name-field-product .form-submit {
+  background-color: #222222;
+}
+/* line 353, ../../../sass/colors/red/style.scss */
+#main .node .field-name-field-product .form-submit:hover, #main .node .field-name-field-product .form-submit:focus {
+  background-color: #fc0d1b;
+}
+/* line 360, ../../../sass/colors/red/style.scss */
+#main .node ul.links li a {
+  color: #fc0d1b;
+}
+/* line 366, ../../../sass/colors/red/style.scss */
+#main .node .product-info-tabs a {
+  color: black;
+}
+/* line 368, ../../../sass/colors/red/style.scss */
+#main .node .product-info-tabs a:hover, #main .node .product-info-tabs a:focus {
+  color: #fc0d1b;
+}
+/* line 376, ../../../sass/colors/red/style.scss */
+#main .node .group-product-specifications .action-links li a {
+  color: #fc0d1b;
+}
+/* line 378, ../../../sass/colors/red/style.scss */
+#main .node .group-product-specifications .action-links li a:hover, #main .node .group-product-specifications .action-links li a:focus {
+  color: #222222;
+}
+
+/* line 6, ../../../sass/colors/red/style.scss */
+.commerce-add-to-cart .btn:hover, .commerce-add-to-cart .btn:focus {
+  color: #fc0d1b;
+}
+/* line 392, ../../../sass/colors/red/style.scss */
+.commerce-add-to-cart .form-submit {
+  background-color: #222222;
+}
+/* line 394, ../../../sass/colors/red/style.scss */
+.commerce-add-to-cart .form-submit:hover, .commerce-add-to-cart .form-submit:focus {
+  background-color: #fc0d1b;
+}
+
+/* jcarousel */
+/* line 404, ../../../sass/colors/red/style.scss */
+.jcarousel-skin-default .jcarousel-container .jcarousel-prev,
+.jcarousel-skin-default .jcarousel-container .jcarousel-next {
+  background-color: #222222;
+  border-color: #222222;
+  color: white;
+}
+/* line 408, ../../../sass/colors/red/style.scss */
+.jcarousel-skin-default .jcarousel-container .jcarousel-prev:hover, .jcarousel-skin-default .jcarousel-container .jcarousel-prev:focus,
+.jcarousel-skin-default .jcarousel-container .jcarousel-next:hover,
+.jcarousel-skin-default .jcarousel-container .jcarousel-next:focus {
+  background-color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+
+/* shopping cart */
+/* line 418, ../../../sass/colors/red/style.scss */
+.shopping-cart .delete-line-item.form-submit {
+  color: #fc0d1b;
+}
+/* line 6, ../../../sass/colors/red/style.scss */
+.shopping-cart table tbody .btn:hover, .shopping-cart table tbody .btn:focus {
+  color: #fc0d1b;
+}
+/* line 429, ../../../sass/colors/red/style.scss */
+.shopping-cart .continue-shopping:hover, .shopping-cart .continue-shopping:focus {
+  background-color: #fc0d1b;
+}
+/* line 434, ../../../sass/colors/red/style.scss */
+.shopping-cart .view-footer .component-total {
+  color: #fc0d1b;
+}
+
+/* line 442, ../../../sass/colors/red/style.scss */
+.commerce-line-item-views-form .line-item-summary .line-item-total-raw {
+  color: #fc0d1b;
+}
+
+/* check out */
+/* line 450, ../../../sass/colors/red/style.scss */
+.checkout-buttons .form-submit {
+  background-color: #222222;
+}
+/* line 452, ../../../sass/colors/red/style.scss */
+.checkout-buttons .form-submit:hover, .checkout-buttons .form-submit:focus {
+  background-color: #fc0d1b;
+}
+
+/* tabs */
+/* line 461, ../../../sass/colors/red/style.scss */
+.tabs.primary li.active a {
+  background-color: #fc0d1b;
+}
+
+/* line 469, ../../../sass/colors/red/style.scss */
+.action-links li a {
+  background-color: #222222;
+}
+/* line 471, ../../../sass/colors/red/style.scss */
+.action-links li a:hover, .action-links li a:focus {
+  background-color: #fc0d1b;
+}
+
+/* line 480, ../../../sass/colors/red/style.scss */
+.advertise-list .carousel-indicators .active {
+  background-color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+
+/* search form */
+/* line 492, ../../../sass/colors/red/style.scss */
+#search-form #edit-advanced legend a:hover, #search-form #edit-advanced legend a:focus {
+  color: #fc0d1b;
+}
+
+/* shopping cart */
+/* line 504, ../../../sass/colors/red/style.scss */
+.shopping-cart .views-field-line-item-title a:hover, .shopping-cart .views-field-line-item-title a:focus {
+  color: #fc0d1b;
+}
+/* line 510, ../../../sass/colors/red/style.scss */
+.shopping-cart .delete-line-item.form-submit:hover, .shopping-cart .delete-line-item.form-submit:focus {
+  color: #222222;
+}
+
+/* block-help-topics */
+/* line 522, ../../../sass/colors/red/style.scss */
+.block-help-topics ul.menu li a:hover, .block-help-topics ul.menu li a:focus {
+  color: #fc0d1b;
+}
+
+/* .block-affiliate */
+/* line 533, ../../../sass/colors/red/style.scss */
+.block-affiliate h3 {
+  color: #fc0d1b !important;
+}
+
+/* sell marketplace page */
+/* line 544, ../../../sass/colors/red/style.scss */
+.block-sell-on .block-sell-on-works .media .media-body .media-heading {
+  color: #fc0d1b;
+}
+
+/* pager */
+/* line 555, ../../../sass/colors/red/style.scss */
+.item-list ul.pager .pager-current {
+  background-color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+/* line 561, ../../../sass/colors/red/style.scss */
+.item-list ul.pager li a:hover, .item-list ul.pager li a:focus {
+  background-color: #fc0d1b;
+  border-color: #fc0d1b;
+}
+
+/* end pager */

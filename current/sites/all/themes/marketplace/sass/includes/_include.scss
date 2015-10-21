@@ -1,0 +1,170 @@
+/* COLORS */
+$black: #000;
+$white: #fff;
+$light-gray: #ddd;
+$very-light-gray: #f5f5f5;
+$dark: #333;
+$gray: #b1b1b1;
+$dark-gray: #7a7a7a;
+$dark-gray-2: #999;
+$very-dark-gray: #696969;
+$orange: #ff6d00;
+$blue: #0088cc;
+$line-color: #dcdcdc;
+
+/* font size */
+$fontsize-11: 0.786em;
+$fontsize-12: 0.857em;
+$fontsize-13: 0.929em;
+$fontsize-14: 1em;
+$fontsize-15: 1.07em;
+$fontsize-16: 1.143em;
+$fontsize-18: 1.286em;
+$fontsize-20: 1.429em;
+$fontsize-22: 1.57em;
+$fontsize-24: 1.714em;
+$fontsize-28: 2em;
+$fontsize-30: 2.143em;
+$fontsize-36: 2.571em;
+$fontsize-48: 3.429em;
+$fontsize-56: 4em;
+
+
+
+/* font */
+/* font */
+$open_sansbold : "open_sansbold";
+$open_sanssemibold : "open_sanssemibold";
+$open_sansregular : "open_sansregular";
+$open_sansitalic : "open_sansitalic";
+$open_sanslight : "open_sanslight";
+@mixin font-opensans{
+  font-family: $open_sansregular, sans-serif;
+}
+
+/* effect */
+@mixin effect{
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@mixin transition($time){
+  transition: all #{$time}s ease-in-out;
+  -webkit-transition: all #{$time}s ease-in-out;
+  -moz-transition: all #{$time}s ease-in-out;
+  -o-transition: all #{$time}s ease-in-out;
+}
+
+
+@mixin fontawesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin sprites{
+  background: url("../images/sprites.png");
+  background-repeat: no-repeat;
+}
+
+@mixin clearfix{
+  &:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin border-radius($number){
+  border-radius: #{$number};
+  -webkit-border-radius: #{$number};
+}
+
+@mixin btn-default{
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  background-color: $blue;
+  color: $white;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  @include effect;
+  @include border-radius(3px);
+  &:hover, &:focus{
+    background-color: $orange;
+
+  }
+}
+
+@mixin popup{
+  box-shadow: 0 0 6px 0 #c1c1c1;
+  -webkit-box-shadow: 0 0 6px 0 #c1c1c1;
+  border: 1px solid $line-color;
+  @include border-radius(3px);
+  padding: 20px 10px;
+  background-color: $white;
+  &:before{
+    position: absolute;
+    content: "";
+    border-width: 11px 10px;
+    border-style: solid;
+    border-color: transparent transparent $white transparent;
+    right: 17px;
+    top: -21px;
+    z-index: 4;
+  }
+  &:after{
+    position: absolute;
+    content: "";
+    border-width: 11px 10px;
+    border-style: solid;
+    border-color: transparent transparent $line-color transparent;
+    right: 17px;
+    top: -21px;
+    z-index: 1;
+  }
+}
+
+@mixin translate($x, $y){
+  transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+}
+
+//$icons:(
+//        arrow-left: "\f004",
+//        arrow-right: "\f005",
+//        angle-left: "\f104",
+//        angle-right: "\f105",
+//        angle-up: "\f106",
+//        angle-down: "\f107",
+//        caret-up: "\f0d8",
+//        caret-down: "\f0d7"
+//);
+//@mixin icon($position: before, $icon: false, $style: true){
+//
+//  @if $position == both{
+//    $position: 'before, &:after';
+//  }
+//  &:#{$position}{
+//    @if $icon{
+//      content: "#{map_get($icons, $icon)}";
+//    }
+//    @if($style){
+//      @include fontawesome;
+//      font-weight: normal;
+//      font-style: normal;
+//    }
+//  @content;
+//  }
+//}

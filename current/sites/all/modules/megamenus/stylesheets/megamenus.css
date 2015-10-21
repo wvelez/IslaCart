@@ -1,0 +1,268 @@
+/* line 1, ../sass/megamenus.scss */
+.megamenus {
+  clear: both;
+  margin: 0;
+  min-height: 0 !important;
+}
+/* line 6, ../sass/megamenus.scss */
+.megamenus .container-fluid,
+.megamenus .navbar-collapse {
+  padding: 0;
+}
+/* line 11, ../sass/megamenus.scss */
+.megamenus .nav > li > a {
+  padding: 15px;
+}
+
+/* line 18, ../sass/megamenus.scss */
+.dropdown-menu {
+  font-size: 1em;
+  min-width: 160px;
+  padding: 0;
+}
+/* line 22, ../sass/megamenus.scss */
+.dropdown-menu:before {
+  display: none;
+}
+/* line 25, ../sass/megamenus.scss */
+.dropdown-menu .divider {
+  width: 100%;
+}
+/* line 28, ../sass/megamenus.scss */
+.dropdown-menu ul {
+  padding: 0;
+}
+/* line 30, ../sass/megamenus.scss */
+.dropdown-menu ul > li {
+  display: block;
+  float: none;
+  list-style: none;
+  margin-left: 0 !important;
+  width: auto;
+}
+/* line 36, ../sass/megamenus.scss */
+.dropdown-menu ul > li > a {
+  border-top: 1px solid #eee;
+  display: block;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 5px 0;
+}
+/* line 42, ../sass/megamenus.scss */
+.dropdown-menu ul > li > a:hover, .dropdown-menu ul > li > a:focus {
+  outline: none;
+  text-decoration: none;
+}
+/* line 48, ../sass/megamenus.scss */
+.dropdown-menu ul > li:first-child > a {
+  border-top: none;
+}
+/* line 54, ../sass/megamenus.scss */
+.dropdown-menu ul .submenu-group .megamenus-col {
+  padding: 0 !important;
+}
+/* line 59, ../sass/megamenus.scss */
+.dropdown-menu .megamenus-row {
+  border-top: 1px solid #eee;
+}
+/* line 61, ../sass/megamenus.scss */
+.dropdown-menu .megamenus-row:first-child {
+  border-top: none;
+}
+/* line 64, ../sass/megamenus.scss */
+.dropdown-menu .megamenus-row .megamenus-col {
+  padding: 5px 10px;
+}
+/* line 68, ../sass/megamenus.scss */
+.dropdown-menu .megamenus-row .dropdown-submenu .dropdown-menu {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 0;
+}
+
+/* line 78, ../sass/megamenus.scss */
+.vertical .navbar-collapse {
+  max-height: 100%;
+}
+/* line 82, ../sass/megamenus.scss */
+.vertical .nav > li {
+  display: block;
+  float: none;
+  margin: 0;
+  min-width: 200px;
+  padding: 0;
+  width: 12em;
+}
+/* line 90, ../sass/megamenus.scss */
+.vertical .nav .dropdown-menu {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  left: 100%;
+  top: 50%;
+}
+/* line 98, ../sass/megamenus.scss */
+.vertical .nav .submenu-align-right,
+.vertical .nav .submenu-align-justify,
+.vertical .nav .submenu-align-center {
+  position: relative;
+}
+/* line 100, ../sass/megamenus.scss */
+.vertical .nav .submenu-align-right > .dropdown-menu,
+.vertical .nav .submenu-align-justify > .dropdown-menu,
+.vertical .nav .submenu-align-center > .dropdown-menu {
+  left: 100%;
+  top: 50%;
+}
+/* line 107, ../sass/megamenus.scss */
+.vertical .nav .submenu-align-center > .dropdown-menu {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+/* line 115, ../sass/megamenus.scss */
+.vertical .nav .caret {
+  border-bottom: 4px solid transparent;
+  border-top-color: transparent;
+  border-right: none;
+  border-left: 4px solid;
+  margin-top: -5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+/* line 128, ../sass/megamenus.scss */
+.vertical.elastic .submenu-align-center > .dropdown-menu {
+  transform: scale(0, 1) translate(0);
+  transform-origin: 10% 0 translate(0);
+  -webkit-transform: scale(0, 1) translate(0);
+  -webkit-transform-origin: 10% 0 translate(0);
+  -ms-transform: scale(0, 1) translate(0);
+  -ms-transform-origin: 10% 0 translate(0);
+  -o-transform: scale(0, 1) translate(0);
+  -o-transform-origin: 10% 0 translate(0);
+}
+/* line 139, ../sass/megamenus.scss */
+.vertical.elastic .submenu-align-center.open > .dropdown-menu {
+  transform: scale(1, 1) translate(0);
+  -webkit-transform: scale(1, 1) translate(0);
+  -ms-transform: scale(1, 1) translate(0);
+  -o-transform: scale(1, 1) translate(0);
+}
+/* line 150, ../sass/megamenus.scss */
+.vertical.zoom .submenu-align-center > .dropdown-menu {
+  transform: scale(0, 0) translate(0);
+  -webkit-transform: scale(0, 0) translate(0);
+  -ms-transform: scale(0, 0) translate(0);
+  -o-transform: scale(0, 0) translate(0);
+}
+/* line 157, ../sass/megamenus.scss */
+.vertical.zoom .submenu-align-center.open > .dropdown-menu {
+  transform: scale(1, 1) translate(0);
+  -webkit-transform: scale(1, 1) translate(0);
+  -ms-transform: scale(1, 1) translate(0);
+  -o-transform: scale(1, 1) translate(0);
+}
+
+@media (max-width: 992px) {
+  /* line 170, ../sass/megamenus.scss */
+  .megamenus {
+    clear: both;
+    height: 100%;
+    position: relative;
+  }
+  /* line 174, ../sass/megamenus.scss */
+  .megamenus .navbar-header {
+    float: none;
+    position: relative;
+    margin: 0 !important;
+  }
+  /* line 178, ../sass/megamenus.scss */
+  .megamenus .navbar-header .navbar-toggle {
+    display: block;
+    float: right;
+    margin: 0 0 10px !important;
+    position: static !important;
+  }
+  /* line 185, ../sass/megamenus.scss */
+  .megamenus .navbar-collapse.collapse {
+    display: none !important;
+  }
+  /* line 188, ../sass/megamenus.scss */
+  .megamenus .navbar-collapse.collapsing {
+    display: block;
+  }
+  /* line 191, ../sass/megamenus.scss */
+  .megamenus .navbar-collapse.collapse.in {
+    display: block !important;
+    overflow-y: hidden;
+    max-height: 20000px;
+  }
+  /* line 196, ../sass/megamenus.scss */
+  .megamenus .navbar {
+    min-height: 0;
+  }
+  /* line 199, ../sass/megamenus.scss */
+  .megamenus .navbar-collapse {
+    margin: 0 !important;
+  }
+  /* line 203, ../sass/megamenus.scss */
+  .megamenus .nav > li {
+    display: block;
+    float: none;
+  }
+  /* line 206, ../sass/megamenus.scss */
+  .megamenus .nav > li > a {
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  /* line 211, ../sass/megamenus.scss */
+  .megamenus .nav > li > a .caret {
+    margin-top: -3px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  }
+  /* line 219, ../sass/megamenus.scss */
+  .megamenus .nav > li:first-child > a {
+    border-top: none;
+  }
+  /* line 223, ../sass/megamenus.scss */
+  .megamenus .nav > li > .dropdown-menu {
+    border-top: 1px solid #eee;
+    border-radius: 0;
+    width: auto !important;
+  }
+  /* line 230, ../sass/megamenus.scss */
+  .megamenus .navbar-collapse {
+    border-top: none;
+  }
+
+  /* line 236, ../sass/megamenus.scss */
+  .always-show-submenu .dropdown-menu {
+    background: none;
+    border: none;
+    box-shadow: none;
+    display: block !important;
+    float: none;
+    left: auto;
+    position: static !important;
+    top: auto;
+    width: 100% !important;
+    transform: none !important;
+  }
+  /* line 248, ../sass/megamenus.scss */
+  .always-show-submenu .dropdown-menu .dropdown-submenu a {
+    border-top: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Vertical reponsive */
+  /* line 259, ../sass/megamenus.scss */
+  .vertical .nav > li {
+    width: auto;
+  }
+}

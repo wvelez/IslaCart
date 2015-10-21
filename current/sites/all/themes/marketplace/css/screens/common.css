@@ -1,0 +1,77 @@
+/* COLORS */
+/* font size */
+/* font */
+/* font */
+/* effect */
+/* line 4, ../../sass/screens/common.scss */
+.off-canvas-toggle {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 15px;
+  top: 33px;
+  color: #7a7a7a;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 14, ../../sass/screens/common.scss */
+.off-canvas-toggle i {
+  font-size: 21px;
+}
+
+/* header */
+/* line 21, ../../sass/screens/common.scss */
+#header .container {
+  position: relative;
+  min-height: 160px;
+}
+/* line 25, ../../sass/screens/common.scss */
+#header .region-header {
+  padding-right: 40px;
+}
+
+/* line 30, ../../sass/screens/common.scss */
+.search-block {
+  width: auto;
+  float: none;
+  clear: both;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  right: 15px;
+}
+
+/* line 39, ../../sass/screens/common.scss */
+.block-view-search-brand {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+
+/* end header */
+/* hide highlighted */
+/* line 48, ../../sass/screens/common.scss */
+#highlighted {
+  display: none;
+}
+
+/* line 53, ../../sass/screens/common.scss */
+.block-megamenus {
+  display: none;
+}
+
+/* line 59, ../../sass/screens/common.scss */
+.breadcrumb a:first-child {
+  padding-left: 0;
+}
+
+/* line 66, ../../sass/screens/common.scss */
+.block-search-help {
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0;
+}

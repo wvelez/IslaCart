@@ -1,0 +1,103 @@
+@import "../includes/_include";
+
+/* tablet */
+
+/* home page */
+.search-block{
+  width: 480px;
+}
+
+/* menu */
+.megamenus {
+  .nav {
+    .dropdown {}
+    .dropdown-menu {
+      width: 500px !important;
+    }
+  }
+}
+
+/* end menu */
+/* product featured  */
+.products-featured {
+  .jcarousel-container {
+    .jcarousel-item {
+      width: 220px !important;
+    }
+  }
+}
+
+/* end product featured */
+
+/* panel footer */
+#panel-footer {
+  .download-apps {
+    ul {
+      li {
+        width: 103px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/** end panel footer */
+
+/* sidebar */
+/* product list  */
+.sidebar {
+  .products-list {
+    .views-field-type-image {
+      width: 70px;
+    }
+  }
+}
+
+/* end product list */
+/* end sidebar */
+
+/* end home page */
+
+/* check out */
+#edit-customer-profile-shipping,
+#edit-customer-profile-billing {}
+
+/* end check out */
+
+/* block-sell-on */
+.block-sell-on {
+  iframe {
+    height: 255px;
+  }
+}
+
+/* end block-sell-on */
+
+/* contact-us */
+.contact-us .webform-client-form {
+  .form-text, .form-textarea , .chzn-container{
+    max-width: 254px;
+  }
+}
+
+/* end contact-us */
+
+/* recommend for you */
+.products-recommend{
+  .jcarousel-container{
+    .jcarousel-item{
+      width: 220px !important;
+    }
+  }
+}
+
+/* page affiliate program */
+.carousel-affiliate{
+  .boxwap{
+    p{
+      margin-top: 0;
+      font-size: 18px;
+    }
+  }
+}
+

@@ -1,0 +1,198 @@
+/* COLORS */
+/* font size */
+/* font */
+/* font */
+/* effect */
+/* vertical-tablet */
+/* page home */
+/* product feature */
+/* line 8, ../../sass/screens/vertical_tablet.scss */
+.products-featured .jcarousel-container .jcarousel-item {
+  width: 227px !important;
+}
+
+/* end product feature*/
+/* sidebar */
+/* line 17, ../../sass/screens/vertical_tablet.scss */
+#sidebar-second {
+  margin-top: 30px;
+}
+
+/* line 21, ../../sass/screens/vertical_tablet.scss */
+.sidebar {
+  /* advertise list */
+  /* end advertise list */
+  /* effortless-shopping */
+  /* end effortless-shopping */
+}
+/* line 76, ../../sass/includes/_include.scss */
+.sidebar .advertise-list .view-content:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+/* line 27, ../../sass/screens/vertical_tablet.scss */
+.sidebar .advertise-list .views-row {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+}
+/* line 32, ../../sass/screens/vertical_tablet.scss */
+.sidebar .advertise-list .views-field-type-image {
+  margin-bottom: 0;
+}
+/* line 76, ../../sass/includes/_include.scss */
+.sidebar .effortless-shopping ul:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+/* line 41, ../../sass/screens/vertical_tablet.scss */
+.sidebar .effortless-shopping ul li {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* end sidebar */
+/* end page home */
+/* product details */
+/* line 58, ../../sass/screens/vertical_tablet.scss */
+#main .node .field-type-image, #main .node .commerce-product-field-field-product-image {
+  width: 40%;
+}
+/* line 61, ../../sass/screens/vertical_tablet.scss */
+#main .node .group-info {
+  width: 60%;
+}
+
+/* end product details */
+/* carousel-affiliate */
+/* line 71, ../../sass/screens/vertical_tablet.scss */
+.carousel-affiliate .boxwap {
+  font-size: 1.286em;
+}
+/* line 73, ../../sass/screens/vertical_tablet.scss */
+.carousel-affiliate .boxwap .register-now {
+  margin: 0 0 0 10px;
+}
+
+/* end carousel-affiliate */
+/* block-affiliate */
+/* line 82, ../../sass/screens/vertical_tablet.scss */
+.block-affiliate .title-note {
+  min-height: 56px;
+}
+
+/* end block-affiliate */
+/* block-sell-on */
+/* line 90, ../../sass/screens/vertical_tablet.scss */
+.block-sell-on iframe {
+  height: 200px;
+}
+
+/* end block-sell-on */
+/* end contact-us */
+/* recommend for you */
+/* line 103, ../../sass/screens/vertical_tablet.scss */
+.products-recommend .jcarousel-container .jcarousel-item {
+  width: 227px !important;
+  min-height: 400px;
+}
+
+/* panel-footer */
+/* line 112, ../../sass/screens/vertical_tablet.scss */
+#panel-footer .panel-column {
+  width: 100%;
+  float: none;
+  margin-bottom: 30px;
+}
+/* line 116, ../../sass/screens/vertical_tablet.scss */
+#panel-footer .panel-column:last-child {
+  margin-bottom: 0;
+}
+/* line 120, ../../sass/screens/vertical_tablet.scss */
+#panel-footer .download-apps {
+  width: 40%;
+}
+
+/* news letter */
+/* line 126, ../../sass/screens/vertical_tablet.scss */
+.block-simplenews, .newsletter-message-block {
+  width: 50%;
+}
+
+/* sidebar */
+/* line 131, ../../sass/screens/vertical_tablet.scss */
+.sidebar {
+  margin-bottom: 30px;
+}
+
+/* contact us */
+/* line 138, ../../sass/screens/vertical_tablet.scss */
+.contact-us .webform-client-form {
+  width: auto;
+  float: none;
+  padding-right: 0;
+}
+/* line 143, ../../sass/screens/vertical_tablet.scss */
+.contact-us .field-name-field-map {
+  float: none;
+  width: auto;
+  padding-left: 0;
+}
+
+/* payment */
+/* line 152, ../../sass/screens/vertical_tablet.scss */
+.block-payment .field-body-topic {
+  width: 65%;
+}
+
+/* afflifiate program */
+/* line 160, ../../sass/screens/vertical_tablet.scss */
+.carousel-affiliate .boxwap p {
+  margin-top: 0;
+}
+
+/* shopping cart */
+/* line 171, ../../sass/screens/vertical_tablet.scss */
+.shopping-cart table tbody .views-field-edit-quantity .form-text {
+  width: 35px;
+  height: 30px;
+}
+/* line 176, ../../sass/screens/vertical_tablet.scss */
+.shopping-cart table tbody .btn {
+  padding: 0;
+  width: 20px;
+  height: 30px;
+}
+/* line 180, ../../sass/screens/vertical_tablet.scss */
+.shopping-cart table tbody .btn:before {
+  line-height: 27px;
+}
+
+/* check out */
+/* line 190, ../../sass/screens/vertical_tablet.scss */
+#edit-customer-profile-shipping,
+#edit-customer-profile-billing {
+  padding: 0;
+  float: none;
+  width: auto;
+}
+/* line 194, ../../sass/screens/vertical_tablet.scss */
+#edit-customer-profile-shipping:before,
+#edit-customer-profile-billing:before {
+  position: static;
+  content: none;
+}
+
+/* line 200, ../../sass/screens/vertical_tablet.scss */
+#edit-customer-profile-shipping {
+  margin-bottom: 30px;
+}

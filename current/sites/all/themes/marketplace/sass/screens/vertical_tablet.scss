@@ -1,0 +1,202 @@
+@import "../includes/_include";
+
+/* vertical-tablet */
+/* page home */
+/* product feature */
+.products-featured {
+  .jcarousel-container {
+    .jcarousel-item {
+      width: 227px !important;
+    }
+  }
+}
+
+/* end product feature*/
+
+/* sidebar */
+#sidebar-second {
+  margin-top: 30px;
+}
+
+.sidebar {
+  /* advertise list */
+  .advertise-list {
+    .view-content {
+      @include clearfix;
+    }
+    .views-row {
+      width: 50%;
+      float: left;
+      margin-bottom: 30px;
+    }
+    .views-field-type-image {
+      margin-bottom: 0;
+    }
+  }
+  /* end advertise list */
+  /* effortless-shopping */
+  .effortless-shopping {
+    ul {
+      @include clearfix;
+      li {
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  /* end effortless-shopping */
+}
+
+/* end sidebar */
+
+/* end page home */
+
+/* product details */
+#main {
+  .node {
+    .field-type-image, .commerce-product-field-field-product-image {
+      width: 40%;
+    }
+    .group-info {
+      width: 60%;
+    }
+  }
+}
+
+/* end product details */
+
+/* carousel-affiliate */
+.carousel-affiliate {
+  .boxwap {
+    font-size: $fontsize-18;
+    .register-now {
+      margin: 0 0 0 10px;
+    }
+  }
+}
+
+/* end carousel-affiliate */
+
+/* block-affiliate */
+.block-affiliate .title-note {
+  min-height: 56px;
+}
+
+/* end block-affiliate */
+
+/* block-sell-on */
+.block-sell-on {
+  iframe {
+    height: 200px;
+  }
+}
+
+/* end block-sell-on */
+
+
+/* end contact-us */
+
+/* recommend for you */
+.products-recommend {
+  .jcarousel-container {
+    .jcarousel-item {
+      width: 227px !important;
+      min-height: 400px;
+    }
+  }
+}
+
+/* panel-footer */
+#panel-footer {
+  .panel-column {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .download-apps {
+    width: 40%;
+  }
+}
+
+/* news letter */
+.block-simplenews, .newsletter-message-block {
+  width: 50%;
+}
+
+/* sidebar */
+.sidebar {
+  margin-bottom: 30px;
+}
+
+
+/* contact us */
+.contact-us{
+  .webform-client-form{
+    width: auto;
+    float: none;
+    padding-right: 0;
+  }
+  .field-name-field-map{
+    float: none;
+    width: auto;
+    padding-left: 0;
+  }
+}
+
+/* payment */
+.block-payment{
+  .field-body-topic{
+    width: 65%;
+  }
+}
+
+/* afflifiate program */
+.carousel-affiliate{
+  .boxwap{
+    p{
+      margin-top: 0;
+    }
+  }
+}
+
+/* shopping cart */
+.shopping-cart{
+  table{
+    tbody{
+      .views-field-edit-quantity{
+        .form-text{
+          width: 35px;
+          height: 30px;
+        }
+      }
+      .btn{
+        padding: 0;
+        width: 20px;
+        height: 30px;
+        &:before{
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
+
+/* check out */
+#edit-customer-profile-shipping,
+#edit-customer-profile-billing{
+  padding: 0;
+  float: none;
+  width: auto;
+  &:before{
+    position: static;
+    content: none;
+  }
+}
+
+#edit-customer-profile-shipping{
+  margin-bottom: 30px;
+}

@@ -1,0 +1,333 @@
+<?php
+include_once drupal_get_path('module', 'megamenus') . '/megamenus.inc';
+include_once drupal_get_path('module', 'megamenus') . '/megamenus.themes.inc';
+include_once drupal_get_path('module', 'megamenus') . '/megamenus.admin.inc';
+
+function megamenus_menu() {
+  $items['admin/structure/megamenus/save_config'] = array(
+    'title' => 'Request',
+    'page callback' => 'megamenus_ajax_save_config',
+    'access arguments' => array('administer megamenus'),
+    'type' => MENU_SUGGESTED_ITEM,
+    'file' => 'megamenus.ajax.inc',
+  );    
+
+  $items['admin/structure/megamenus/load_menu'] = array(
+    'title' => 'Request',
+    'page callback' => 'megamenus_ajax_load_menu',
+    'access arguments' => array('administer megamenus'),
+    'type' => MENU_SUGGESTED_ITEM,
+    'file' => 'megamenus.ajax.inc',
+  );    
+
+  $items['admin/structure/megamenus/load_block'] = array(
+    'title' => 'Request',
+    'page callback' => 'megamenus_ajax_load_block',
+    'access arguments' => array('administer megamenus'),
+    'type' => MENU_SUGGESTED_ITEM,
+    'file' => 'megamenus.ajax.inc',
+  );    
+
+  $items['admin/structure/megamenus'] = array(
+    'title' => 'Mega Menus', 
+    'description' => t('Mega Menus'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('megamenus_admin_settings'),
+    'access arguments' => array('administer megamenus'),
+    'file' => 'megamenus.admin.inc', 
+  );
+
+  $items['admin/structure/megamenus/%megamenus_menu_name'] = array(
+    'title' => 'Config Mega Menus', 
+    'description' => t('Config Mega Menus'), 
+    'page callback' => 'drupal_get_form', 
+    'page arguments' => array ('megamenus_configure_form', 3),
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('administer megamenus'),
+    'file' => 'megamenus.admin.inc', 
+  );
+
+  $items['admin/structure/megamenus/%megamenus_menu_name/config'] = array(
+    'title' => 'Config Mega Menus',
+    'weight' => -10,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'context' => MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE,
+  );
+
+  $items['admin/structure/megamenus/%megamenus_menu_name/convert'] = array(
+    'title' => 'Import from TB MegaMenu', 
+    'description' => t('Convert config TB MegaMenu to MegaMenu-VX'), 
+    'page callback' => 'drupal_get_form', 
+    'page arguments' => array ('megamenus_convert_from_tb_menu_confirm', 3),
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('administer megamenus'),
+    'file' => 'megamenus.admin.inc', 
+  );
+
+  return $items;
+}
+
+function megamenus_permission() {
+  return array(
+    'administer megamenus' => array(
+      'title' => t('Administer Mega Menus'),
+    ),
+  );
+}
+
+function megamenus_theme($existing, $type, $theme, $path) {
+  $items = array();
+  $items['megamenus'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'content' => NULL,
+      'section' => 'frontend',
+    ),
+    'template' => 'megamenus',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus',
+    ),    
+  );
+
+  $items['megamenus_ul'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'level' => NULL,
+      'items' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ), 
+    'template' => 'megamenus-ul',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_ul',
+    ),
+  );
+
+  $items['megamenus_li'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'a_classes' => array(),
+      'item' => NULL,
+      'level' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'submenu' => NULL,
+      'section' => 'frontend',
+    ), 
+    'template' => 'megamenus-li',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_li',
+    ),
+  );
+
+  $items['megamenus_submenu'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'parent' => NULL,
+      'level' => NULL,
+      'menu_config' => NULL,
+      'parent_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ),
+    'template' => 'megamenus-submenu',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_submenu',
+    ),
+  );
+
+  $items['megamenus_row'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'row' => NULL,
+      'parent' => NULL,
+      'level' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ),
+    'template' => 'megamenus-row',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_row',
+    ),
+  );
+
+  $items['megamenus_col'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'col' => NULL,
+      'parent' => NULL,
+      'level' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ),
+    'template' => 'megamenus-col',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_col',
+    ),
+  );
+
+  $items['megamenus_subul'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'col' => NULL,
+      'level' => NULL,
+      'items' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ), 
+    'template' => 'megamenus-subul',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_subul',
+    ),
+  );
+  /*
+  $items['megamenus_subul'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'col' => NULL,
+      'level' => NULL,
+      'items' => NULL,
+      'menu_config' => NULL,
+      'block_config' => NULL,
+      'trail' => NULL,
+      'section' => 'frontend',
+    ), 
+    'template' => 'megamenus-subul',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_subul',
+    ),
+  );*/
+
+  $items['megamenus_block'] = array(
+    'variables' => array(
+      'menu_name' => NULL,
+      'block_key' => NULL,
+      'section' => 'frontend',
+      'showblocktitle' => 1,
+    ), 
+    'template' => 'megamenus-block',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_block',
+    ),
+  );
+
+  $items['megamenus_admin_settings'] = array(
+    'render element' => 'form',
+  );
+
+  $items['megamenus_backend'] = array(
+    'variables' => array(
+      'blocks' => NULL,
+      'menu_name' => NULL,
+      'menu_content' => NULL,
+    ),
+    'template' => 'megamenus-backend',
+    'path' => $path . '/templates',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_megamenus_backend',
+    ),    
+  );
+
+  return $items;
+}
+
+/*
+ * Implementation of hook_block_view()
+ */
+function megamenus_block_view($delta = 0) {
+  drupal_add_js(drupal_get_path('module', 'megamenus') . '/bootstrap/js/bootstrap.js');
+  megamenus_add_css(drupal_get_path('module', 'megamenus') . '/font-awesome/css/font-awesome.css');
+  megamenus_add_css(drupal_get_path('module', 'megamenus') . '/bootstrap/css/bootstrap.css');
+  megamenus_add_css(drupal_get_path('module', 'megamenus') . '/bootstrap/css/bootstrap-theme.css');    
+  megamenus_add_css(drupal_get_path('module', 'megamenus') . '/stylesheets/base.css');
+  megamenus_add_css(drupal_get_path('module', 'megamenus') . '/stylesheets/megamenus.css'); 
+  drupal_add_js(drupal_get_path('module', 'megamenus') . '/js/megamenus-frontend.js');
+  return array('content' => array(
+    '#type' => 'markup',
+    '#markup' =>  theme('megamenus', array('menu_name' => $delta))
+  ));
+}
+
+/*
+ * Implementation of hook_block_info()
+ */
+function megamenus_block_info() {
+  $menus = megamenus_get_megamenus();
+  $blocks = array();
+  foreach($menus as $menu) {
+    $blocks[$menu->menu_name] = array(
+      'info' => t('Mega Menus') . ': ' . $menu->title, 'cache' => DRUPAL_NO_CACHE 
+    );
+  }
+  return $blocks;
+}
+
+function megamenus_menu_name_load($megamenus_menu_name) {
+  return array($megamenus_menu_name);
+}
+
+function megamenus_theme_registry_alter(&$theme_registry) {
+  if(isset($theme_registry['megamenus_submenu'])) {
+    $submenu_registry = $theme_registry['megamenus_submenu'];
+    $cache = array('megamenus_submenu' => $submenu_registry);
+    $templates = megamenus_find_hook_templates($cache, drupal_get_path('module', "megamenus") . "/templates/submenu-types");
+    foreach($templates as $hook => $info) {
+      if (!isset($theme_registry[$hook])) {
+        $new_hook = $submenu_registry;
+        $new_hook['path'] = $info['path'];
+        $new_hook['template'] = str_replace("_", "-", $hook);
+        $theme_registry[$hook] = $new_hook;
+      }
+    }
+  }
+}
+
+function megamenus_block_view_alter(&$data, $block) {
+  if (isset($data['content']) && is_array($data['content']) && $block->module == 'megamenus') {
+    $contextual_links = array(
+      'admin/structure/menu/manage',
+      array($block->delta),
+    );
+
+    $data['content']['#contextual_links']['menu_config'] = $contextual_links;
+
+    $contextual_links = array(
+      'admin/structure/megamenus',
+      array($block->delta),
+    );
+
+    $data['content']['#contextual_links']['megamenus_config'] = $contextual_links;
+    
+  }
+}

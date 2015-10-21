@@ -1,0 +1,130 @@
+@import url(../../fonts/futura/stylesheet.css);
+/* line 3, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping {
+  color: #fff;
+}
+/* line 5, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .navbar-collapse {
+  background: #000;
+}
+/* line 10, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .nav > li > a {
+  border-left: 1px solid #393737;
+  color: #fff !important;
+  font-family: 'futura_lt_btlight';
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 15px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+/* line 21, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .nav > li:hover > a, .style-theme_new_shopping .nav > li:focus > a, .style-theme_new_shopping .nav > li.open > a, .style-theme_new_shopping .nav > li.active > a {
+  background: none !important;
+  border-color: #393737 !important;
+  color: #e21a2c !important;
+}
+/* line 28, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .nav > li:first-child > a {
+  border-left: none;
+}
+/* line 34, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu {
+  background-color: #000;
+  border: none;
+  font-size: 12px;
+  margin: 0;
+}
+/* line 39, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row {
+  border-color: #393737;
+}
+/* line 41, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col {
+  padding: 15px 20px;
+}
+/* line 44, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col .block h2 {
+  color: #fff;
+}
+/* line 47, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col .block a {
+  color: #e21a2c;
+}
+/* line 49, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col .block a:hover, .style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col .block a:focus {
+  color: #fff;
+}
+/* line 56, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu .megamenus-row .megamenus-col .dropdown-submenu .dropdown-menu:after {
+  display: none;
+}
+/* line 65, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu ul li > a {
+  border-top: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5xp 0 !important;
+  text-transform: none;
+}
+/* line 71, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu ul li > a:hover, .style-theme_new_shopping .dropdown-menu ul li > a:focus {
+  color: #e21a2c;
+}
+/* line 75, ../../sass/presets/theme_new_shopping.scss */
+.style-theme_new_shopping .dropdown-menu ul li.active > a {
+  color: #e21a2c;
+}
+
+/* line 85, ../../sass/presets/theme_new_shopping.scss */
+.vertical .nav > li {
+  background: none;
+  border-top: 1px solid #393737;
+  padding: 0;
+}
+/* line 89, ../../sass/presets/theme_new_shopping.scss */
+.vertical .nav > li:first-child {
+  border-top: none;
+}
+
+@media (max-width: 992px) {
+  /* line 99, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .navbar-collapse {
+    background: #000;
+  }
+  /* line 104, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .nav > li > a {
+    border-color: #393737;
+    color: #fff !important;
+    padding: 10px 20px;
+  }
+  /* line 110, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .nav > li:hover > a, .style-theme_new_shopping .nav > li:focus > a, .style-theme_new_shopping .nav > li.open > a, .style-theme_new_shopping .nav > li.active > a {
+    background: #e21a2c !important;
+    border-color: #393737 !important;
+    color: #fff !important;
+  }
+  /* line 114, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .nav > li:hover > a:hover, .style-theme_new_shopping .nav > li:hover > a:focus, .style-theme_new_shopping .nav > li:focus > a:hover, .style-theme_new_shopping .nav > li:focus > a:focus, .style-theme_new_shopping .nav > li.open > a:hover, .style-theme_new_shopping .nav > li.open > a:focus, .style-theme_new_shopping .nav > li.active > a:hover, .style-theme_new_shopping .nav > li.active > a:focus {
+    border-color: #393737 !important;
+    color: #fff !important;
+  }
+  /* line 120, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .nav > li > .dropdown-menu {
+    border-color: #393737;
+  }
+  /* line 125, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .dropdown-menu {
+    background: none;
+    border: none;
+  }
+  /* line 128, ../../sass/presets/theme_new_shopping.scss */
+  .style-theme_new_shopping .dropdown-menu .megamenus-col {
+    padding: 5px 10px !important;
+  }
+
+  /* line 135, ../../sass/presets/theme_new_shopping.scss */
+  .vertical .nav > li {
+    border-top: none;
+  }
+}
